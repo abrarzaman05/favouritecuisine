@@ -1,0 +1,95 @@
+
+<html>
+<script>
+    window.addEventListener('load', function() {
+      alert('HELLO SENSEI!! WELCOME TO MY WEBSITE! THIS WEBSITE TELLS YOU ABOUT MY FAVORITE CUISINES');
+    });
+	function showPopup() {
+      var popup = document.createElement('div');
+      popup.className = 'popup';
+      popup.innerText = 'YUMYUMYUMNOMNOM';
+
+      document.body.appendChild(popup);
+	 }
+  </script>
+  <style>
+    .popup {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #FFFFFF;
+      padding: 20px;
+      border: 2px solid #000;
+      font-size: 100px;
+      text-align: center;
+      z-index: 9999;
+    }
+
+    .center-button {
+      display: flex;
+      justify-content: center;
+	  background-color: #fff;
+      padding: 5px;
+      border: 20px solid #000;
+      font-size: 40px;
+    }
+	</style>
+<head>
+	<meta charset="UTF-8">
+	<title>FAVE-FOODS</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+	<div class="header">
+		<div>
+			<a href="index.html" id="logo"><img src="images/logo.png" alt="logo" width="400" height="400"></a>
+			<br><br><br><br><br><br><br><br><br><br><br><br>
+			<ul>
+				<li class="selected"><a href="index.html">CUISINES</a></li>
+				<li><a href="about.html">ABOUT</a></li>
+				<li><a href="contact.html">CONTACT</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="content">
+		<div>
+			<ul>
+				<li>
+					<a href="index.html"><img src="images/japanese.jpg" alt="JAPANESE" width="292" height="220"></a>
+					<a href="index.html">JAPANESE</a>
+				</li>
+				<li>
+					<a href="index.html"><img src="images/italian.jpg" alt="ITALIAN" width="292" height="220"></a>
+					<a href="index.html">ITALIAN</a>
+				</li>
+				<li>
+					<a href="index.html"><img src="images/thai.jpg" alt="THAI" width="292" height="220"></a>
+					<a href="index.html">THAI</a>
+				</li>
+			</ul>
+			<ul>
+				<li>
+					<a href="index.html"><img src="images/indian.jpg" alt="INDIAN" width="292" height="220"></a>
+					<a href="index.html">INDIAN</a>
+				</li>
+				<li>
+					<a href="index.html"><img src="images/mexican.jpg" alt="MEXICAN" width="292" height="220"></a>
+					<a href="index.html">MEXICAN</a>
+				</li>
+				<li>
+					<a href="index.html"><img src="images/bengali.jpeg" alt="BENGALI" width="292" height="220"></a>
+					<a href="index.html">BENGALI</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	 <div class="center-button">
+    <button onclick="showPopup()">EAT ME</button>
+	<div class="footer">
+			</div>
+			<p>NAME: MALIHA MOSHRAFA HOSSAIN  ID: 23229026</p>
+		</div>
+	</div>
+</body>
+</html>
